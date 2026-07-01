@@ -1,9 +1,9 @@
 {
-    "name": "wwaz/colornames-php",
+    "name": "wwaz/colorname-php",
     "description": "Load and find color names by RGB value",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/wwaz/colornames-php",
+    "homepage": "https://github.com/wwaz/colorname-php",
     "keywords": [
         "color",
         "color-name",
@@ -11,8 +11,8 @@
         "rgb"
     ],
     "support": {
-        "issues": "https://github.com/wwaz/colornames-php/issues",
-        "source": "https://github.com/wwaz/colornames-php"
+        "issues": "https://github.com/wwaz/colorname-php/issues",
+        "source": "https://github.com/wwaz/colorname-php"
     },
     "require": {
         "php": "^8.2",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "wwaz\\Colornames\\": "src/"
+            "wwaz\\Colorname\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "wwaz\\Colornames\\Tests\\": "tests/"
+            "wwaz\\Colorname\\Tests\\": "tests/"
         }
     },
     "scripts": {

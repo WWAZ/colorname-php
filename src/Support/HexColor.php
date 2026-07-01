@@ -1,6 +1,6 @@
 <?php
 
-namespace wwaz\Colornames\Support;
+namespace wwaz\Colorname\Support;
 
 class HexColor
 {

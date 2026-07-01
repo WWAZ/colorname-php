@@ -1,10 +1,10 @@
 <?php
 
-namespace wwaz\Colornames\Tests;
+namespace wwaz\Colorname\Tests;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use wwaz\Colornames\Support\HexColor;
+use wwaz\Colorname\Support\HexColor;
 
 class HexColorTest extends TestCase
 {

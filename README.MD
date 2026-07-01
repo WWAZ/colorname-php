@@ -1,4 +1,4 @@
-# colornames-php
+# colorname-php
 
 Find a human-friendly color name for a hex or RGB color value.
 
@@ -9,7 +9,7 @@ This package is useful when your app stores colors as technical values, but you 
 ### 1. Show a readable color name in a UI
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $colors = new ColornameService();
 
@@ -21,7 +21,7 @@ You can use this in design tools, admin panels, product editors, theme builders,
 ### 2. Match a color against your own catalog
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $colors = new ColornameService('/path/to/your/colornames.json');
 
@@ -35,7 +35,7 @@ This is helpful when you need localized color names or a product-specific list o
 Install the package with Composer:
 
 ```bash
-composer require wwaz/colornames-php
+composer require wwaz/colorname-php
 ```
 
 The package requires PHP 8.2 or newer.
@@ -45,7 +45,7 @@ The package requires PHP 8.2 or newer.
 Use `ColornameService` for the common case:
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $colors = new ColornameService();
 
@@ -68,7 +68,7 @@ $colors->fromHex('#ff0000');
 Create a catalog from an array:
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $catalog = [
     ['name' => 'Brand Red', 'hex' => '#ff0000'],
@@ -83,7 +83,7 @@ echo $colors->fromHex('#f00'); // Brand Red
 Or load a catalog from a JSON file:
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $colors = new ColornameService('/path/to/your/colornames.json');
 ```
@@ -112,7 +112,7 @@ Each entry needs a `name` and either `hex` or `rgb`. If both are present, `hex` 
 The service also accepts RGB values:
 
 ```php
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 $colors = new ColornameService();
 

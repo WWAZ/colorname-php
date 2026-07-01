@@ -7,7 +7,7 @@
     colors="true"
 >
     <testsuites>
-        <testsuite name="colornames-php">
+        <testsuite name="colorname-php">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

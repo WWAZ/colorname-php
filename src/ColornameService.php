@@ -1,9 +1,9 @@
 <?php
 
-namespace wwaz\Colornames;
+namespace wwaz\Colorname;
 
-use wwaz\Colornames\Catalog\Catalog;
-use wwaz\Colornames\Catalog\Matcher;
+use wwaz\Colorname\Catalog\Catalog;
+use wwaz\Colorname\Catalog\Matcher;
 
 class ColornameService
 {

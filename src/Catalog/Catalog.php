@@ -1,8 +1,8 @@
 <?php
 
-namespace wwaz\Colornames\Catalog;
+namespace wwaz\Colorname\Catalog;
 
-use wwaz\Colornames\Support\HexColor;
+use wwaz\Colorname\Support\HexColor;
 
 class Catalog
 {

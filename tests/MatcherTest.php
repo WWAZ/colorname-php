@@ -1,10 +1,10 @@
 <?php
 
-namespace wwaz\Colornames\Tests;
+namespace wwaz\Colorname\Tests;
 
 use PHPUnit\Framework\TestCase;
-use wwaz\Colornames\Catalog\Catalog;
-use wwaz\Colornames\Catalog\Matcher;
+use wwaz\Colorname\Catalog\Catalog;
+use wwaz\Colorname\Catalog\Matcher;
 
 class MatcherTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace wwaz\Colornames\Tests;
+namespace wwaz\Colorname\Tests;
 
 use PHPUnit\Framework\TestCase;
-use wwaz\Colornames\ColornameService;
+use wwaz\Colorname\ColornameService;
 
 class ColornameServiceTest extends TestCase
 {

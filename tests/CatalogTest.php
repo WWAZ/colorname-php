@@ -1,9 +1,9 @@
 <?php
 
-namespace wwaz\Colornames\Tests;
+namespace wwaz\Colorname\Tests;
 
 use PHPUnit\Framework\TestCase;
-use wwaz\Colornames\Catalog\Catalog;
+use wwaz\Colorname\Catalog\Catalog;
 
 class CatalogTest extends TestCase
 {
