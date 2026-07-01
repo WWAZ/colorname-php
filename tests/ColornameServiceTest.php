@@ -26,7 +26,7 @@ class ColornameServiceTest extends TestCase
         $serviceA = new ColornameService();
         $serviceB = new ColornameService();
 
-        $serviceA->setCatalog('meodai-colornames-bestof.json');
+        $serviceA->setCatalog('colornames-en.json');
 
         $this->assertSame('Red', $serviceA->fromHex('f00'));
         $this->assertSame('Red', $serviceB->fromHex('f00'));
@@ -34,7 +34,7 @@ class ColornameServiceTest extends TestCase
 
     public function test_from_hex_catalog_override_affects_only_single_call(): void
     {
-        $service = new ColornameService('meodai-colornames-bestof.json');
+        $service = new ColornameService('colornames-en.json');
 
         $this->assertSame('Custom Red', $service->fromHex('f00', [
             ['name' => 'Custom Red', 'hex' => '#f00'],
@@ -51,7 +51,7 @@ class ColornameServiceTest extends TestCase
 
     public function test_constructor_accepts_absolute_path(): void
     {
-        $path = $this->storagePath . '/meodai-colornames-bestof.json';
+        $path = $this->storagePath . '/colornames-en.json';
         $service = new ColornameService($path);
 
         $this->assertSame('Red', $service->fromHex('f00'));
@@ -60,7 +60,7 @@ class ColornameServiceTest extends TestCase
     public function test_set_catalog_accepts_absolute_path(): void
     {
         $service = new ColornameService();
-        $path = $this->storagePath . '/meodai-colornames-bestof.json';
+        $path = $this->storagePath . '/colornames-en.json';
 
         $service->setCatalog($path);
 
